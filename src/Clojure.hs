@@ -24,7 +24,7 @@ data Addr = Def
 data IR =
       AInst { op :: Op, result :: Var, var1 :: Var, var2 :: Var }
     | Int   { result :: Var, num :: Int }
-    | Call  { label :: String, args :: [Var] }
+    | Call  { label :: String, args :: [Var], implicit :: [Var] }
     | Boe   { cond :: [IR], then' :: [IR], elseLabel :: String, continueLabel :: String}
     | Label { label :: String }
     deriving (Show, Eq)
