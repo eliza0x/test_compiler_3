@@ -1,0 +1,3 @@
+[main["a","b"][] := 
+    [],f[][] := 
+    [AInst {op = Add, result = "_return", var1 = "a", var2 = "b"}]]
